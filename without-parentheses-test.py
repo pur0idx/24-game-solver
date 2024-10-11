@@ -1,7 +1,10 @@
 # Sample Space without Parenthesis
 from permutation import *
 
-num = [1,4,5,6]
+# num = [1,4,5,6]
+
+print("type in numbers with space: ex. 1 2 3 4")
+num = input().split()
 op = ['+','-','*','/']
 
 numList = permute([str(n) for n in num])
