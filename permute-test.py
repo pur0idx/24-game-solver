@@ -1,4 +1,4 @@
-from permutation import permute
+from permutation import *
 
 elements = [1,2,3,4]
 print(permute(elements))
@@ -8,6 +8,6 @@ print(permute(elements,3))
 print('')
 
 elements = ['+','-','*','/']
-print(permute(elements))
+print(permute_with_repetition(elements))
 print('')
-print(permute(elements,3))
+print(permute_with_repetition(elements,3))
