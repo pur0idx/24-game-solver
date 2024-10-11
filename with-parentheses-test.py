@@ -1,4 +1,4 @@
-# Sample Space wit Parenthesis
+# Sample Space with Parenthesis (not inclusive)
 from permutation import *
 
 # num = [1,4,5,6]
@@ -20,6 +20,8 @@ for p in numList:
         sampleSpace.append(f"{p[0]} {o[0]} ({p[1]} {o[1]} {p[2]}) {o[2]} {p[3]}")
         sampleSpace.append(f"{p[0]} {o[0]} ({p[1]} {o[1]} {p[2]} {o[2]} {p[3]})")
         sampleSpace.append(f"{p[0]} {o[0]} {p[1]} {o[1]} ({p[2]} {o[2]} {p[3]})")
+        sampleSpace.append(f"({p[0]} {o[0]} {p[1]}) {o[1]} ({p[2]} {o[2]} {p[3]})")
+        sampleSpace.append(f"(({p[0]} {o[0]} {p[1]}) {o[1]} {p[2]}) {o[2]} {p[3]}")
         
 for ss in sampleSpace:
     try:
