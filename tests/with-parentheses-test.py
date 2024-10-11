@@ -1,4 +1,9 @@
-# Sample Space with Parenthesis (not inclusive)
+# Sample Space with Parenthesis
+import sys
+import os
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
+
 from permutation import *
 
 # num = [1,4,5,6]
